@@ -1,3 +1,25 @@
+## Verify Mento Contracts on celoscan
+
+```bash
+# Clone the repo
+$ git clone https://github.com/mento-protocol/sourcify-to-etherscan.git
+
+# Change directory to the the newly cloned repo
+$ cd sourcify-to-etherscan
+
+# Install dev dependencies with npm
+
+$ npm i
+
+# Generate JSON input
+$ node bin/run verify -n celo <contract-address>
+```
+
+# View tutorial here
+
+https://github.com/mento-protocol/sourcify-to-etherscan/assets/84185790/cd649d6a-8e05-491a-8668-3a0086b8a98d
+
+
 sourcify-to-etherscan
 =====================
 
