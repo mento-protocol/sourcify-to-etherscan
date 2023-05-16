@@ -49,11 +49,6 @@ export default class Verify extends Command {
 
     const status = await sourcify.check(network.chainId, args.contract);
 
-    if (status !== "perfect") {
-      this.error(
-        `contract ${args.contract} is not yet verified on Sourcify for ${network.name}`
-      );
-    }
 
     this.log("Fetching source code and metadata files from Sourcify");
 
