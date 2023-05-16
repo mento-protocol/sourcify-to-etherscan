@@ -19,10 +19,10 @@ export async function check(
 
 export async function files(chainId: number, contract: string): Promise<any> {
   const { data } = await axios.get(
-    `${SOURCIFY_API}files/${chainId}/${contract}`
+    `${SOURCIFY_API}files/any/${chainId}/${contract}`
   );
 
-  return data;
+  return data.files;
 }
 
 export type Metadata = {
